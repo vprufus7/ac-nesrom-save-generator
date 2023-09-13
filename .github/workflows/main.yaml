@@ -22,5 +22,5 @@ jobs:
 
           - name: 'Build Inventory Image'
             run: |
-              docker build . --tag ghcr.io/<your-GitHub-username>/ac-nesrom-gen:latest
-              docker push ghcr.io/<your-GitHub-username>/ac-nesrom-gen:latest
+              docker build . --tag ghcr.io/vprufus7/ac-nesrom-gen:latest
+              docker push ghcr.io/vprufus7/ac-nesrom-gen:latest
