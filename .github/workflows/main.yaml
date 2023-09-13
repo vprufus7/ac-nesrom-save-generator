@@ -3,15 +3,12 @@ name: Deploy Images to GHCR
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 jobs:
       push-ac-nesrom-gen-image:
         runs-on: ubuntu-latest
-        defaults:
-          run:
-            working-directory: './ac-nesrom-gen'
         steps:
           - name: 'Checkout GitHub Action'
             uses: actions/checkout@main
